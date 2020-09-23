@@ -1,4 +1,4 @@
-#Prueba subida archivo
+# Prueba subida archivo
 
 git add .
 git commit -m "n u d"
