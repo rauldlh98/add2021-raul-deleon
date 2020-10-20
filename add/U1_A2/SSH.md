@@ -60,11 +60,36 @@ Y si ahora accedemos del desde el usuario _raul_ desde el cliente hasta el usuar
 
 Para comprobar que esta condicion solo se ha establecido en el usuario _raul_ del cliente, intentamos acceder desde el usuario _raul_ de _Windows_:
 
-![imagen_11](imagenes/12userwindows.png)
+![imagen_12](imagenes/12userwindows.png)
 
 Como podemos observar, nos pide la contraseña de acceso.
 
+### 6 Uso de SSH como túnel para X
+A continuacion, instalaremos en el servidor una aplicacion de entorno grafico que no este en los clientes, en este caso usaremos geany. Para ello será necesario configurar la opcion X11Forwarding a yes del fichero _/etc/ssh/sshd_config_:
 
-(6 ) Uso de SSH como túnel para X			
-(8.1) Restricción sobre un usuario
-(9) Servidor SSH en Windows
+![imagen_13](imagenes/13yes.png)
+
+Una vez hecho esto, nos dirigimos al cliente y nos conectamos por ssh pero añadiremos un -X para que puede ejecutar aplicaciones graficas. _ssh -X deleon1@server15g_:
+
+![imagen_14](imagenes/14geany.png)
+
+### 7 Aplicaciones Windows Nativas
+
+Lo primero será instalar Wine en el servidor y mediante ssh conectarnos con el cliente y ejecutar el block de notas que viene con la aplicacion de Wine. _wine notepad_:
+
+![imagen_15](imagenes/15wine.png)
+
+
+### 8.1 Restricción sobre un usuario
+
+Para finalizar la practica, añadiremos restricción sobre los usuarios del cliente. Para ello usaremos el usuario deleon2 del servidor y modificaremos el archivo _/etc/ssh/sshd_config_ y estableceremos las restriccioes a los usuarios raul y cliente15g:
+
+![imagen_16](imagenes/16restricciones.png)
+
+Para verificar que hemos hecho todo correctamente, ejecutamos el comando _/usr/sbin/sshd -t; echo $?_ y la respuesta deberia ser 0, si nos apareciera un 1, el fichero estaria configurado de forma incorrecta:
+
+![imagen_17](imagenes/17errores.png)
+
+Y por ultimo si intentamos conectarnos por ssh al usuario _deleon2_ desde la maquina cliente con el usuario _raul_, no nos dejará:
+
+![imagen_18](imagenes/18entrar.png)
