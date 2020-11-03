@@ -23,7 +23,7 @@ Podemos modificar la configuración editaremos directamente el fichero _/etc/sam
 
 ![smb.conf](img/Selección_004.png)
 
-Para finalizar la configuración ejecutaremos los comandos _testparm_ y _more /etc/samba/smb.conf_ para verficar que todo esta correcto:
+Para finalizar la configuración ejecutaremos los comandos _testparm_ y _more /etc/samba/smb.conf_ para verificar que todo esta correcto:
 
 ![smb.conf](img/Selección_005.png)
 
@@ -49,7 +49,7 @@ Lo siguiente será dirigirse al **Servidor Samba** y ejecutar los comando _smbst
 
 ![smb](img/Selección_011.png)
 
-Ejecutamos el comando _net view \\\172.19.15.31_, para ver los recursos del servidor remoto y tambein usaremos el comando _net use S: \\\172.19.15.31\barco asir /USER:pirata1 /p:yes_ para crear una conexión con el recurso compartido y lo monta en la unidad S:
+Ejecutamos el comando _net view \\\172.19.15.31_, para ver los recursos del servidor remoto y también usaremos el comando _net use S: \\\172.19.15.31\barco asir /USER:pirata1 /p:yes_ para crear una conexión con el recurso compartido y lo monta en la unidad S:
 
 ![smb.conf](img/Selección_013.png)
 
@@ -99,7 +99,7 @@ En el equipo actual de OpenSUSE, que será nuestro cliente Samba. Usaremos coman
 
 Lo siguiente será crear la carpeta _/mnt/remoto15/castillo_ y ejecutar el comando _mount -t cifs //172.19.15.31/castillo /mnt/remoto15/castillo -o username=soldado1_ para montar un recurso compartido de Samba Server, como si fuera una carpeta más de nuestro sistema.
 
-Ejecutar _df -hT_ para verficar que se ha montado el disco:
+Ejecutar _df -hT_ para verificar que se ha montado el disco:
 
 ![smb.conf](img/Selección_026.png)
 
