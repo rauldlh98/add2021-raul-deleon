@@ -3,7 +3,7 @@
 
 Antes de configurar el servidor Samba, haremos una copia de seguridad en archivo de configuracion con el comando _cp /etc/samba/smb.conf /etc/samba/smb.conf.bak_
 
-![smb.conf.bak](img/Selecion_001.png)
+![smb.conf.bak](/img/Seleccion_001.png)
 
 
 
