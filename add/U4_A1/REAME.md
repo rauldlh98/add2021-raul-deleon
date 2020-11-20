@@ -36,6 +36,6 @@ Ahora nos dirigimos a la **MV cliente LDAP** y ejecutamos el comando `nmap -Pn 1
 
 ![](img/8.png)
 
-Una vez verfiquemos que los puerto están abiertos ejecutamos el comando `ldpasearch -H ldap://172.19.15.31 -W -D "cn=Directory Manager" -b "dc=ldap15,dc=curso2021" "(uid=*)" | grep dn` para consultar los usuarios **LDAP** que tenemos en el servicio de directorio remoto:
+Una vez verifiquemos que los puerto están abiertos ejecutamos el comando `ldpasearch -H ldap://172.19.15.31 -W -D "cn=Directory Manager" -b "dc=ldap15,dc=curso2021" "(uid=*)" | grep dn` para consultar los usuarios **LDAP** que tenemos en el servicio de directorio remoto:
 
 ![](img/9.png)
