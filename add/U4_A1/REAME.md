@@ -1,10 +1,12 @@
 # (2.4) Comprobar contenido del DS LDAP 			
 
-Para mostrar el contenido de nuestra base de datos LDAP usamos el comando _ldapsearch -b "dc=ldap15,dc=curso2021" -x | grep dn_:
+Para mostrar el contenido de nuestra base de datos LDAP usamos el comando `ldapsearch -b "dc=ldap15,dc=curso2021" -x | grep dn`:
 
 ![grep_dn](img/1.png)
 
-ldapsearch -H ldap://localhost -b "dc=ldapXX,dc=curso2021" -W -D "cn=Directory Manager" | grep dn, en este caso hacemos la consulta usando usuario/clave.
+Ahora haremos la consulta usando usuario/clave de LDAP con el comando `ldapsearch -H ldap://localhost -b "dc=ldapXX,dc=curso2021" -W -D "cn=Directory Manager" | grep dn`:
+
+![](img/2.png)
 
 # (3.3) Comprobar nuevo usuario 			
 
