@@ -1,13 +1,10 @@
 # (2.4) Comprobar contenido del DS LDAP 			
 
-    ldapsearch -b "dc=ldapXX,dc=curso2021" -x | grep dn, muestra el contenido de nuestra base de datos LDAP. "dn" significa nombre distiguido, es un identificador que tiene cada nodo dentro del árbol LDAP.
+Para mostrar el contenido de nuestra base de datos LDAP usamos el comando _ldapsearch -b "dc=ldap15,dc=curso2021" -x | grep dn_:
 
+![grep_dn](img/1.png)
 
-    ![1](img/1.png)
-
-    ![grep_dn](img/1.png)
-
-    ldapsearch -H ldap://localhost -b "dc=ldapXX,dc=curso2021" -W -D "cn=Directory Manager" | grep dn, en este caso hacemos la consulta usando usuario/clave.
+ldapsearch -H ldap://localhost -b "dc=ldapXX,dc=curso2021" -W -D "cn=Directory Manager" | grep dn, en este caso hacemos la consulta usando usuario/clave.
 
 # (3.3) Comprobar nuevo usuario 			
 
