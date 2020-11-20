@@ -8,9 +8,16 @@ Ahora haremos la consulta usando usuario/clave de LDAP con el comando `ldapsearc
 
 ![](img/2.png)
 
+![](img/3.png)
+
 # (3.3) Comprobar nuevo usuario 			
 
-Estamos usando la clase posixAccount, para almacenar usuarios dentro de un directorio LDAP. Dicha clase posee el atributo uid. Por tanto, para listar los usuarios de un directorio, podemos filtrar por "(uid=*)".ldapsearch -W -D "cn=Directory Manager" -b "dc=ldapXX,dc=curso2021" "(uid=*)", para comprobar si se ha creado el usuario correctamente en el LDAP.
+Estamos usando la clase posixAccount, para almacenar usuarios dentro de un directorio LDAP. Dicha clase posee el atributo uid. Por tanto, para listar los usuarios de un directorio, podemos filtrar por `(uid=*)".ldapsearch -W -D "cn=Directory Manager" -b "dc=ldapXX,dc=curso2021`:
+
+
+![](img/4_n.png)
+
+
 
 # (4.3) Comprobar los usuarios creados
 
