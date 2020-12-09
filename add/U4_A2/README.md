@@ -12,7 +12,7 @@ Ir a MV cliente y ejecutar los siguientes comandos:
 
 ![](img/001.png)
 
-# Configurar autenticación LDAP
+# 2. Configurar autenticación LDAP
 
 ### 2.1 Crear conexión con servidor
 
