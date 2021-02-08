@@ -1,4 +1,4 @@
-3.4 	Comprobar la conectividad
+# 3.4 	Comprobar la conectividad
 
 Desde el Máster comprobamos:
 
@@ -20,7 +20,7 @@ minion15g:
 
 ![](img/1.png)
 
-4.5 	Aplicar estado (apache) 		
+# 4.5 	Aplicar estado (apache) 		
 
 Ir al Master:
 * Consultar los estados en detalle y verificar que no hay errores en las definiciones.
@@ -36,7 +36,7 @@ Ir al Master:
 
 ![](img/4.png)
 	
-5.1 	Aplicar estado (users) 			
+# 5.1 	Aplicar estado (users) 			
 
 Vamos a crear un estado llamado users que nos servirá para crear un grupo y usuarios en las máquinas Minions.
 
@@ -51,7 +51,7 @@ Y aplicamos el estado:
 
 ![](img/007.png)
 
-5.2 	Aplicar estado (files) 	
+# 5.2 	Aplicar estado (files) 	
 
 Ahora crearemos el estado `dirs` para crear las carpetas `private` (700), `public` (755) y `group` (750) en el **HOME** del usuario `koji`:
 
