@@ -1,4 +1,4 @@
-3.4 	Comprobar la conectividad 
+3.4 	Comprobar la conectividad
 
 Desde el Máster comprobamos:
 
@@ -20,7 +20,6 @@ minion15g:
 
 ![](img/1.png)
 
-prasr
 4.5 	Aplicar estado (apache) 			
 5.1 	Aplicar estado (users) 			
 5.2 	Aplicar estado (files) 			
