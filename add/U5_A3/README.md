@@ -28,7 +28,7 @@ Ir al Master:
 
 ![](img/2.png)
     
-    * `salt '*' state.show_highstate`,
+* `salt '*' state.show_highstate`,
 
 ![](img/3.png)
 
