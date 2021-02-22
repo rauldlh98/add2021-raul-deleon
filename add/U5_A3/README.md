@@ -28,7 +28,11 @@ Ir al Master:
 
 ![](img/2.png)
     
+<<<<<<< HEAD
     * `salt '*' state.show_highstate`,
+=======
+* `salt '*' state.show_highstate`,
+>>>>>>> da96a163e532dd087aeea25c287be39376cc5834
 
 ![](img/3.png)
 
